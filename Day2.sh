@@ -14,7 +14,7 @@
 # Requirements:
 #   Read a value from user
 #   Create a pattern as mentioned above.
-#   Be sure to save a copy to compare with the response on the next screen.
+#
 patternN = ""
 echo -e "Welcome to loops. \n Yor interger \"n\" will generate a loop that prints the pattern \"1 . . . . n\" \n"
 echo -e "Please enter an integer to loop:"; read intN;
@@ -32,6 +32,7 @@ do
 patternN+=" $i"
 done
 echo -e "Pattern: $patternN"
+exit 0
 fi
 
 if [ "$intN" -lt 0 ]
