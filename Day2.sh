@@ -30,8 +30,9 @@ then
 for ((i=1; i<=$intN; i++))
 do
 patternN+=" $i"
-done
 echo -e "Pattern: $patternN"
+done
+#echo -e "Pattern: $patternN"
 exit 0
 fi
 
@@ -40,6 +41,7 @@ then
 for ((i=1; i>=$intN; i--))
 do
 patternN+=" $i"
-done
 echo -e "Pattern: $patternN"
+done
+#echo -e "Pattern: $patternN"
 fi
