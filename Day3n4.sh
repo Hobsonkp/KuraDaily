@@ -2,9 +2,10 @@
 # Read ‘n’ and generate a pattern given below
 # Pattern
 #   1
-#   1 2
-#   1 2 3
-#   1 2 3 4
+#   2 3
+#   4 5 6
+#   7 8 9 10
+# -Assuming n=4 in the example pattern above
 # Prerequisites:
 #   How to run a loops in shell scripts.
 #   How to execute a bash script.
@@ -14,8 +15,10 @@
 # Requirements:
 #   Read a value from user
 #   Create a pattern as mentioned above.
-#
+#   Be sure to save a copy to compare with the response on the next screen.
+
 patternN = ""
+lineInc = 0
 echo -e "Welcome to loops. \n Yor interger \"n\" will generate a loop that prints the pattern \"1 . . . . n\" \n"
 echo -e "Please enter an integer to loop:"; read intN;
 
@@ -29,7 +32,14 @@ if [ "$intN" -ge 0 ]
 then
 for ((i=1; i<=$intN; i++))
 do
-patternN+=" $i"
+patternN=""
+    for ((j=1; j<=$i; j++))
+    do
+    lineInc=$(($lineInc+1))
+    patternN+=" $lineInc"
+    #echo " $lineInc $j"
+    done
+
 echo -e "Pattern: $patternN"
 done
 #echo -e "Pattern: $patternN"
@@ -40,7 +50,14 @@ if [ "$intN" -lt 0 ]
 then
 for ((i=-1; i>=$intN; i--))
 do
-patternN+=" $i"
+patternN=""
+    for ((j=-1; j>=$i; j--))
+    do
+    lineInc=$(($lineInc-1))
+    patternN+=" $lineInc"
+    #echo " $lineInc $j"
+    done
+
 echo -e "Pattern: $patternN"
 done
 #echo -e "Pattern: $patternN"
