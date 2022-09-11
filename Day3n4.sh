@@ -37,12 +37,12 @@ patternN=""
     do
     lineInc=$(($lineInc+1))
     patternN+=" $lineInc"
-    #echo " $lineInc $j"
+
     done
 
 echo -e "Pattern: $patternN"
 done
-#echo -e "Pattern: $patternN"
+
 exit 0
 fi
 
@@ -55,10 +55,10 @@ patternN=""
     do
     lineInc=$(($lineInc-1))
     patternN+=" $lineInc"
-    #echo " $lineInc $j"
+
     done
 
 echo -e "Pattern: $patternN"
 done
-#echo -e "Pattern: $patternN"
+
 fi
