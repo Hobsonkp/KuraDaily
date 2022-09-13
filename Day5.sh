@@ -27,13 +27,13 @@ do
     fi
 done
 while [[ $stat -eq 0 ]] ; do      
+    stat=1
     numberSum="0"  
     echo -e "Please enter valid real numbers that you want to add separated by a <<space>> : "; read numberStream;
     numberStream=($numberStream)
     for i in "${numberStream[@]}"
     do
         numberSum+="+$i"
-        echo $i
             if ! [[ $i =~ ^[+-]?[.]?[0-9]+\.?[0-9]*$ ]] 2> /dev/null; then
                 numberSum="0"
                 stat=0
