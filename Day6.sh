@@ -53,3 +53,4 @@ echo -e "\t\"MULTIPLICATION\"\tInput\t: ./Day6.sh 6 x 2 \tOutput\t: The answer i
 echo -e "\t\"DIVISION\"\t\tInput\t: ./Day6.sh 6 / 2 \tOutput\t: The answer is : 3"
 exit 1
 fi
+exit 0
