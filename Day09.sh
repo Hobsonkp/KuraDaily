@@ -13,7 +13,7 @@
 if [[ $# -eq 0 ]]; then
 echo -e "\t!!!ERROR!!!: No arguments passed."
 echo -e "\tUse command line arguments to enter the numbers separated by spaces to be compared. $i"
-echo -e "\tEnter as follows: ./Day9.sh <<filename>>"
+echo -e "\tEnter as follows: ./Day09.sh <<filename>>"
 exit 1
 fi
 
